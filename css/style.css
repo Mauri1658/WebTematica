@@ -1,4 +1,9 @@
-.card img{
-    height: 250px;
+.inazuma1 {
+    height: 299px;
+    object-fit: cover;
+}
+
+.inazuma2 {
+    height: 415px;
     object-fit: cover;
 }
