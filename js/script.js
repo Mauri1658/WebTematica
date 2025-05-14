@@ -5,11 +5,11 @@
     Array.from(forms).forEach(form => {
         form.addEventListener('submit', event => {
             // Validar hobbies manualmente
-            const checkboxes = form.querySelectorAll('.hobby:checked'); // id de los hobbies
+            const checkboxes = form.querySelectorAll('.saga:checked'); // id de los hobbies
             if (checkboxes.length === 0) {
                 event.preventDefault();
                 event.stopPropagation();
-                form.querySelector('.hobby').closest('fieldset').classList.add('is-invalid');
+                form.querySelector('.saga').closest('fieldset').classList.add('is-invalid');
             }
 
             if (!form.checkValidity()) {
@@ -39,7 +39,8 @@ document.getElementById('bio').addEventListener('input', function() {
     contador.textContent = this.value.length;
 });
 
-// Mostrar valor del sueldo aspiracional
-document.getElementById('sueldo').addEventListener('input', function() {
-    document.getElementById('sueldo-valor').textContent = this.value;
+// Mostrar nivel de satisfacción del usuario
+document.getElementById('satisfaccion').addEventListener('input', function() {
+    document.getElementById('satisfaccion-valor').textContent = this.value;
 });
+
