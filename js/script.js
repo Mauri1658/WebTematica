@@ -34,13 +34,12 @@
 // Script adicional para funcionalidades extra
 
 // Contador de caracteres para la biografía
-document.getElementById('bio').addEventListener('input', function() {
+document.getElementById('bio').addEventListener('input', function () {
     const contador = document.getElementById('contador');
     contador.textContent = this.value.length;
 });
 
 // Mostrar nivel de satisfacción del usuario
-document.getElementById('satisfaccion').addEventListener('input', function() {
+document.getElementById('satisfaccion').addEventListener('input', function () {
     document.getElementById('satisfaccion-valor').textContent = this.value;
 });
-
