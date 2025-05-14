@@ -13,8 +13,8 @@
 
 .personaje{
     img{
-        height: 200px;
-        width: 100px;
-        object-fit: cover;
-        object-position: center;}
+        height: 150px;
+        width: 150px;
+        margin-left: 125px;
+    }
 }
