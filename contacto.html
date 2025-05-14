@@ -39,9 +39,214 @@
         </ul>
     </header>
     
-    <main>
-
-
+<main>
+        <div class="container my-5">
+            <div class="form-container">
+                <h2 class="form-title">Formulario de Contacto</h2>
+                <form class="row g-3 needs-validation" novalidate>
+                    <!-- Nombre completo -->
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                        <label for="nombre" class="form-label">Nombre completo</label>
+                        <input type="text" class="form-control" id="nombre" required minlength="3">
+                        <div class="invalid-feedback">
+                            Por favor ingrese su nombre completo (mínimo 3 caracteres).
+                        </div>
+                    </div>
+        
+                    <!-- Email -->
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" required>
+                        <div class="invalid-feedback">
+                            Por favor ingrese un email válido.
+                        </div>
+                    </div>
+                    
+                    <!-- Contraseña -->
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                        <label for="pass" class="form-label">Contraseña</label>
+                        <input type="password" class="form-control" id="pass" required minlength="8">
+                        <div class="invalid-feedback">
+                            La contraseña debe tener al menos 8 caracteres.
+                        </div>
+                    </div>
+                    
+                    <!-- Confirmar contraseña -->
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                        <label for="pass2" class="form-label">Confirmar contraseña</label>
+                        <input type="password" class="form-control" id="pass2" required>
+                        <div class="invalid-feedback">
+                            Las contraseñas no coinciden.
+                        </div>
+                    </div>
+                    
+                    <!-- Edad -->
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                        <label for="edad" class="form-label">Edad</label>
+                        <input type="number" class="form-control" id="edad" required min="18" max="120">
+                        <div class="invalid-feedback">
+                            Debe tener entre 18 y 120 años.
+                        </div>
+                    </div>
+                    
+                    <!-- Fecha de nacimiento -->
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                        <label for="fecha_nac" class="form-label">Fecha de nacimiento</label>
+                        <input type="date" class="form-control" id="fecha_nac" required>
+                        <div class="invalid-feedback">
+                            Por favor ingrese su fecha de nacimiento.
+                        </div>
+                    </div>
+                    
+                    <!-- Teléfono -->
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                        <label for="telefono" class="form-label">Teléfono</label>
+                        <input type="tel" class="form-control" id="telefono" pattern="[0-9]{9}">
+                        <div class="invalid-feedback">
+                            Ingrese un número de teléfono válido (9 dígitos).
+                        </div>
+                    </div>
+                    
+                    <!-- URL de sitio web -->
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                        <label for="url" class="form-label">URL de sitio web</label>
+                        <input type="url" class="form-control" id="url">
+                        <div class="invalid-feedback">
+                            Ingrese una URL válida (opcional).
+                        </div>
+                    </div>
+        
+                    <!-- Color favorito -->
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                        <label for="color" class="form-label">Color favorito</label>
+                        <input type="color" class="form-control form-control-color" id="color" value="#563d7c">
+                    </div>
+                    
+                    <!-- Género -->
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                        <fieldset class="border p-2 rounded">
+                            <legend class="float-none w-auto px-2">Género</legend>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="genero" id="hombre" value="hombre" required>
+                                <label class="form-check-label" for="hombre">
+                                    Hombre
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="genero" id="mujer" value="mujer">
+                                <label class="form-check-label" for="mujer">
+                                    Mujer
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="genero" id="otro" value="otro">
+                                <label class="form-check-label" for="otro">
+                                    Otro
+                                </label>
+                            </div>
+                            <div class="invalid-feedback">
+                                Por favor seleccione su género.
+                            </div>
+                        </fieldset>
+                    </div>
+                    
+                    <!-- Hobbies -->
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                        <fieldset class="border p-2 rounded hobby-fieldset">
+                            <legend class="float-none w-auto px-2">Sagas Favoritas (al menos una)</legend>
+                            <div class="form-check">
+                                <input class="form-check-input hobby" type="checkbox" id="deportes" value="deportes">
+                                <label class="form-check-label" for="deportes">
+                                    Original
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input hobby" type="checkbox" id="musica" value="musica">
+                                <label class="form-check-label" for="musica">
+                                    Go
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input hobby" type="checkbox" id="lectura" value="lectura">
+                                <label class="form-check-label" for="lectura">
+                                    Go Chrono Stones
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input hobby" type="checkbox" id="viajes" value="viajes">
+                                <label class="form-check-label" for="viajes">
+                                    Go Galaxy
+                                </label>
+                            </div>
+                            <div class="invalid-feedback">
+                                Por favor seleccione al menos un hobby.
+                            </div>
+                        </fieldset>
+                    </div>
+                    
+                    <!-- País -->
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                        <label for="pais" class="form-label">País</label>
+                        <select class="form-select" id="pais" required>
+                            <option value="" selected disabled>Selecciona...</option>
+                            <option value="es">España</option>
+                            <option value="mx">México</option>
+                            <option value="ar">Argentina</option>
+                            <option value="co">Colombia</option>
+                            <option value="pe">Perú</option>
+                            <option value="cl">Chile</option>
+                            <option value="ve">Venezuela</option>
+                            <option value="otro">Otro</option>
+                        </select>
+                        <div class="invalid-feedback">
+                            Por favor seleccione un país.
+                        </div>
+                    </div>
+        
+                    <!-- Biografía -->
+                    <div class="col-12">
+                        <label for="bio" class="form-label">Biografía (máx. 500 caracteres)</label>
+                        <textarea class="form-control" id="bio" rows="3" maxlength="500"></textarea>
+                        <div class="form-text">
+                            <span id="contador">0</span>/500 caracteres
+                        </div>
+                    </div>
+                    
+                    <!-- Sueldo aspiracional -->
+                    <div class="col-12">
+                        <label for="sueldo" class="form-label">Sueldo aspiracional: <span id="sueldo-valor">5500</span> €</label>
+                        <input type="range" class="form-range" min="1000" max="10000" step="500" id="sueldo" value="5500">
+                    </div>
+                    
+                    <!-- CV (PDF) -->
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                        <label for="cv" class="form-label">CV (PDF)</label>
+                        <input type="file" class="form-control" id="cv" accept=".pdf" required>
+                        <div class="invalid-feedback">
+                            Por favor suba su CV en formato PDF.
+                        </div>
+                    </div>
+                    
+                    <!-- Botones -->
+                    <div class="col-12">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="terminos" required>
+                            <label class="form-check-label" for="terminos">
+                                Acepto los términos y condiciones
+                            </label>
+                            <div class="invalid-feedback">
+                                Debe aceptar los términos y condiciones.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-12">
+                        <button class="btn btn-primary" type="submit">Enviar</button>
+                        <button class="btn btn-secondary" type="reset">Limpiar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
     </main>
 
     <footer class="p-2">
