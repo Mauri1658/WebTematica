@@ -1,9 +1,12 @@
+
 .inazuma1 {
     height: 299px;
-    object-fit: cover;
 }
 
 .inazuma2 {
-    height: 415px;
-    object-fit: cover;
+    height: 413px;
+}
+
+.inazuma3 {
+    height: 413px;
 }
