@@ -22,3 +22,12 @@
     width: 10px;
     height: 120px;
 }
+
+/* Para la opción 2 con efecto hover */
+.hover-opacity-100:hover {
+    opacity: 1 !important;
+}
+
+.transition-all {
+    transition: all 0.3s ease;
+}
