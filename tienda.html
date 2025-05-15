@@ -39,165 +39,206 @@
         </ul>
     </header>
 
-<main id="tienda" class="container py-5">
-    <h1 class="text-center mb-4">Productos</h1>
-    <div class="row row-cols-1 row-cols-md-3 g-4" id="productos">
+    <main id="tienda" class="container py-5">
+        <h1 class="text-center mb-4">Productos</h1>
+        <div class="row row-cols-1 row-cols-md-3 g-4" id="productos">
 
-        <!-- Producto 1 - Disponible -->
-        <div class="col">
-            <div class="card h-100">
-                <div class="position-absolute top-0 start-0 m-2">
-                    <span class="badge bg-success">Disponible</span>
+            <!-- Producto 1 -->
+            <div class="col">
+                <div class="card h-100">
+                    <div class="position-absolute top-0 start-0 m-2">
+                        <span class="badge bg-success">Disponible</span>
+                    </div>
+                    <div class="ratio ratio-1x1">
+                        <img src="img\Tienda\balon.png" class="img-fluid object-fit-contain p-3" alt="Balón Inazuma">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Balón Oficial Inazuma Eleven</h5>
+                        <p class="card-text">Balón de fútbol oficial de Inazuma Eleven con diseño exclusivo del torneo
+                            Football Frontier. Material resistente para partidos intensos.</p>
+                        <p class="text-primary fw-bold">39,99 €</p>
+                        <p class="text-success small mb-2">10 unidades disponibles</p>
+                        <button class="btn btn-primary btn-comprar w-100" data-stock="10" data-id="1">Añadir al
+                            carrito</button>
+                    </div>
                 </div>
-                <img src="img\Tienda\balon.png" class="card-img-top" alt="Balón Inazuma">
-                <div class="card-body">
-                    <h5 class="card-title">Balón Oficial Inazuma Eleven</h5>
-                    <p class="card-text">Balón con diseño oficial del equipo Raimon. Ideal para jugar al fútbol con estilo.</p>
-                    <p class="text-primary fw-bold">29,99 €</p>
-                    <p class="text-success small mb-2">10 unidades disponibles</p>
-                    <button class="btn btn-primary btn-comprar w-100" data-stock="10" data-id="1">Añadir al carrito</button>
+            </div>
+
+            <!-- Producto 2 -->
+            <div class="col">
+                <div class="card h-100">
+                    <div class="position-absolute top-0 start-0 m-2">
+                        <span class="badge bg-success">Disponible</span>
+                    </div>
+                    <div class="ratio ratio-1x1">
+                        <img src="img\Tienda\CamisetaProminence.png" class="img-fluid object-fit-contain p-3"
+                            alt="Camiseta Prominence">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Camiseta Prominence</h5>
+                        <p class="card-text">Camiseta oficial del equipo Prominence con diseño de llamas. Incluye número
+                            y nombre del jugador. Tela transpirable para máximo rendimiento.</p>
+                        <p class="text-primary fw-bold">45,99 €</p>
+                        <p class="text-success small mb-2">5 unidades disponibles</p>
+                        <button class="btn btn-primary btn-comprar w-100" data-stock="5" data-id="2">Añadir al
+                            carrito</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Producto 3 -->
+            <div class="col">
+                <div class="card h-100">
+                    <div class="position-absolute top-0 start-0 m-2">
+                        <span class="badge bg-success">Disponible</span>
+                    </div>
+                    <div class="ratio ratio-1x1">
+                        <img src="img\Tienda\Gorra.png" class="img-fluid object-fit-contain p-3" alt="Gorra Axel">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Gorra Axel</h5>
+                        <p class="card-text">Gorra oficial de Axel Blaze con diseño de llamas y su número 10. Ajustable
+                            y con protección UV. Respaldo transpirable, costuras reforzadas y estilo unisex.</p>
+                        <p class="text-primary fw-bold">22,50 €</p>
+                        <p class="text-success small mb-2">7 unidades disponibles</p>
+                        <button class="btn btn-primary btn-comprar w-100" data-stock="7" data-id="3">Añadir al
+                            carrito</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Producto 4 -->
+            <div class="col">
+                <div class="card h-100">
+                    <div class="position-absolute top-0 start-0 m-2">
+                        <span class="badge bg-success">Disponible</span>
+                    </div>
+                    <div class="ratio ratio-1x1">
+                        <img src="img/Tienda/PosterInazuma.png" class="img-fluid object-fit-contain p-3"
+                            alt="Póster Inazuma Eleven">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Póster Inazuma Eleven</h5>
+                        <p class="card-text">Póster coleccionable tamaño A2 del equipo Inazuma Japan con todos los
+                            miembros. Impresión de alta calidad.</p>
+                        <p class="text-primary fw-bold">14,99 €</p>
+                        <p class="text-success small mb-2">15 unidades disponibles</p>
+                        <button class="btn btn-primary btn-comprar w-100" data-stock="15" data-id="4">Añadir al
+                            carrito</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Producto 5 -->
+            <div class="col">
+                <div class="card h-100">
+                    <div class="position-absolute top-0 start-0 m-2">
+                        <span class="badge bg-warning text-dark">Últimas unidades</span>
+                    </div>
+                    <div class="ratio ratio-1x1">
+                        <img src="img\Tienda\CamisetaRoyal.png" class="img-fluid object-fit-contain p-3"
+                            alt="Camiseta Royal Academy">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Camiseta Royal Academy</h5>
+                        <p class="card-text">Camiseta oficial del prestigioso equipo Royal Academy. Diseño elegante en
+                            azul y blanco con detalles dorados.</p>
+                        <p class="text-primary fw-bold">49,99 €</p>
+                        <p class="text-warning small mb-2">Solo 2 unidades</p>
+                        <button class="btn btn-primary btn-comprar w-100" data-stock="2" data-id="5">Añadir al
+                            carrito</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Producto 6 -->
+            <div class="col">
+                <div class="card h-100">
+                    <div class="position-absolute top-0 start-0 m-2">
+                        <span class="badge bg-danger">Agotado</span>
+                    </div>
+                    <div class="ratio ratio-1x1">
+                        <img src="img\Tienda\FiguraMark.png" class="img-fluid object-fit-contain p-3 img-opacity"
+                            alt="Figura Mark Evans">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Figura de Action de Mark Evans</h5>
+                        <p class="card-text">Figura articulada de 20cm de Mark Evans con uniforme de portería. Incluye
+                            balón y base de exhibición.</p>
+                        <p class="text-primary fw-bold">59,99 €</p>
+                        <p class="text-danger small mb-2">Producto agotado</p>
+                        <button class="btn btn-outline-secondary w-100" disabled data-stock="0" data-id="6">No
+                            disponible</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Producto 7 -->
+            <div class="col">
+                <div class="card h-100">
+                    <div class="position-absolute top-0 start-0 m-2">
+                        <span class="badge bg-success">Disponible</span>
+                    </div>
+                    <div class="ratio ratio-1x1">
+                        <img src="img\Tienda\Mochila.png" class="img-fluid object-fit-contain p-3"
+                            alt="Mochila Inazuma Eleven">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Mochila Inazuma Eleven</h5>
+                        <p class="card-text">Mochila escolar con diseño del logo de Inazuma Eleven. Múltiples
+                            compartimentos y resistente al agua. Ligera, ergonómica y con correas acolchadas.</p>
+                        <p class="text-primary fw-bold">42,99 €</p>
+                        <p class="text-success small mb-2">6 unidades disponibles</p>
+                        <button class="btn btn-primary btn-comprar w-100" data-stock="6" data-id="7">Añadir al
+                            carrito</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Producto 8 -->
+            <div class="col">
+                <div class="card h-100">
+                    <div class="position-absolute top-0 start-0 m-2">
+                        <span class="badge bg-danger">Agotado</span>
+                    </div>
+                    <div class="ratio ratio-1x1">
+                        <img src="img\Tienda\Manga.jpg" class="img-fluid object-fit-contain p-3 img-opacity"
+                            alt="Manga Inazuma Eleven">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Manga Inazuma Eleven</h5>
+                        <p class="card-text">Edición especial del manga original Inazuma Eleven. Volúmenes 1-10 en caja
+                            coleccionista con extras exclusivos.</p>
+                        <p class="text-primary fw-bold">89,99 €</p>
+                        <p class="text-danger small mb-2">Producto agotado</p>
+                        <button class="btn btn-outline-secondary w-100" disabled data-stock="0" data-id="8">No
+                            disponible</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Producto 9 -->
+            <div class="col">
+                <div class="card h-100">
+                    <div class="position-absolute top-0 start-0 m-2">
+                        <span class="badge bg-success">Disponible</span>
+                    </div>
+                    <div class="ratio ratio-1x1">
+                        <img src="img\Tienda\Sudadera.png" class="img-fluid object-fit-contain p-3" alt="Sudadera Raimon">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Sudadera Raimon</h5>
+                        <p class="card-text">Sudadera con capucha del equipo Raimon. Forro polar suave con logo bordado.
+                            Perfecta para entrenamientos.</p>
+                        <p class="text-primary fw-bold">54,99 €</p>
+                        <p class="text-success small mb-2">10 unidades disponibles</p>
+                        <button class="btn btn-primary btn-comprar w-100" data-stock="10" data-id="9">Añadir al
+                            carrito</button>
+                    </div>
                 </div>
             </div>
         </div>
-
-        <!-- Producto 2 - Disponible -->
-        <div class="col">
-            <div class="card h-100">
-                <div class="position-absolute top-0 start-0 m-2">
-                    <span class="badge bg-success">Disponible</span>
-                </div>
-                <img src="img\Tienda\CamisetaProminence.png" class="card-img-top" alt="Camiseta Endou Mamoru">
-                <div class="card-body">
-                    <h5 class="card-title">Camiseta Prominence</h5>
-                    <p class="card-text">Camiseta oficial del portero estrella de Raimon, Endou Mamoru. Hecha con materiales de alta calidad.</p>
-                    <p class="text-primary fw-bold">24,99 €</p>
-                    <p class="text-success small mb-2">5 unidades disponibles</p>
-                    <button class="btn btn-primary btn-comprar w-100" data-stock="5" data-id="2">Añadir al carrito</button>
-                </div>
-            </div>
-        </div>
-
-        <!-- Producto 3 - Disponible -->
-        <div class="col">
-            <div class="card h-100">
-                <div class="position-absolute top-0 start-0 m-2">
-                    <span class="badge bg-success">Disponible</span>
-                </div>
-                <img src="img\Tienda\Gorra.png" class="card-img-top" alt="Gorra Raimon">
-                <div class="card-body">
-                    <h5 class="card-title">Gorra Axel</h5>
-                    <p class="card-text">Gorra oficial con el logo del equipo Raimon. Protege del sol mientras muestras tu apoyo.</p>
-                    <p class="text-primary fw-bold">19,99 €</p>
-                    <p class="text-success small mb-2">7 unidades disponibles</p>
-                    <button class="btn btn-primary btn-comprar w-100" data-stock="7" data-id="3">Añadir al carrito</button>
-                </div>
-            </div>
-        </div>
-
-        <!-- Producto 4 - Disponible -->
-        <div class="col">
-            <div class="card h-100">
-                <div class="position-absolute top-0 start-0 m-2">
-                    <span class="badge bg-success">Disponible</span>
-                </div>
-                <img src="img/Tienda/PosterInazuma.png" class="card-img-top" alt="Póster Inazuma Eleven">
-                <div class="card-body">
-                    <h5 class="card-title">Póster Inazuma Eleven</h5>
-                    <p class="card-text">Póster en alta calidad del portero Endou Mamoru en una pose épica.</p>
-                    <p class="text-primary fw-bold">9,99 €</p>
-                    <p class="text-success small mb-2">15 unidades disponibles</p>
-                    <button class="btn btn-primary btn-comprar w-100" data-stock="15" data-id="4">Añadir al carrito</button>
-                </div>
-            </div>
-        </div>
-
-        <!-- Producto 5 - Últimas unidades -->
-        <div class="col">
-            <div class="card h-100">
-                <div class="position-absolute top-0 start-0 m-2">
-                    <span class="badge bg-warning text-dark">Últimas unidades</span>
-                </div>
-                <img src="img\Tienda\CamisetaRoyal.png" class="card-img-top" alt="Camiseta Axel Blaze">
-                <div class="card-body">
-                    <h5 class="card-title">Camiseta Royal Academy</h5>
-                    <p class="card-text">Camiseta con el diseño de Axel Blaze, uno de los delanteros más famosos de la serie.</p>
-                    <p class="text-primary fw-bold">22,99 €</p>
-                    <p class="text-warning small mb-2">Solo 2 unidades</p>
-                    <button class="btn btn-primary btn-comprar w-100" data-stock="2" data-id="5">Añadir al carrito</button>
-                </div>
-            </div>
-        </div>
-
-        <!-- Producto 6 - Agotado -->
-        <div class="col">
-            <div class="card h-100">
-                <div class="position-absolute top-0 start-0 m-2">
-                    <span class="badge bg-danger">Agotado</span>
-                </div>
-                <img src="img\Tienda\FiguraMark.png" class="card-img-top img-opacity" alt="Figura Mark Evans">
-                <div class="card-body">
-                    <h5 class="card-title">Figura de Action de Mark Evans</h5>
-                    <p class="card-text">Figura de acción de Mark Evans en su traje de fútbol. Perfecta para los coleccionistas.</p>
-                    <p class="text-primary fw-bold">34,99 €</p>
-                    <p class="text-danger small mb-2">Producto agotado</p>
-                    <button class="btn btn-outline-secondary w-100" disabled data-stock="0" data-id="6">No disponible</button>
-                </div>
-            </div>
-        </div>
-
-        <!-- Producto 7 - Disponible -->
-        <div class="col">
-            <div class="card h-100">
-                <div class="position-absolute top-0 start-0 m-2">
-                    <span class="badge bg-success">Disponible</span>
-                </div>
-                <img src="img\Tienda\Mochila.png" class="card-img-top" alt="Mochila Inazuma Eleven">
-                <div class="card-body">
-                    <h5 class="card-title">Mochila Inazuma Eleven</h5>
-                    <p class="card-text">Mochila oficial con el logo del equipo Inazuma Eleven. Ideal para llevar tus pertenencias al colegio.</p>
-                    <p class="text-primary fw-bold">34,99 €</p>
-                    <p class="text-success small mb-2">6 unidades disponibles</p>
-                    <button class="btn btn-primary btn-comprar w-100" data-stock="6" data-id="7">Añadir al carrito</button>
-                </div>
-            </div>
-        </div>
-
-        <!-- Producto 8 - Agotado -->
-        <div class="col">
-            <div class="card h-100">
-                <div class="position-absolute top-0 start-0 m-2">
-                    <span class="badge bg-danger">Agotado</span>
-                </div>
-                <img src="img\Tienda\Manga.jpg" class="card-img-top img-opacity" alt="Manga Inazuma Eleven">
-                <div class="card-body">
-                    <h5 class="card-title">Manga Inazuma Eleven</h5>
-                    <p class="card-text">Colección completa del manga de Inazuma Eleven en edición especial.</p>
-                    <p class="text-primary fw-bold">49,99 €</p>
-                    <p class="text-danger small mb-2">Producto agotado</p>
-                    <button class="btn btn-outline-secondary w-100" disabled data-stock="0" data-id="8">No disponible</button>
-                </div>
-            </div>
-        </div>
-
-        <!-- Producto 9 - Disponible -->
-        <div class="col">
-            <div class="card h-100">
-                <div class="position-absolute top-0 start-0 m-2">
-                    <span class="badge bg-success">Disponible</span>
-                </div>
-                <img src="img\Tienda\Sudadera.png" class="card-img-top" alt="Sudadera Raimon">
-                <div class="card-body">
-                    <h5 class="card-title">Sudadera Raimon</h5>
-                    <p class="card-text">Sudadera oficial del equipo Raimon, perfecta para los días fríos y para mostrar tu apoyo al equipo.</p>
-                    <p class="text-primary fw-bold">39,99 €</p>
-                    <p class="text-success small mb-2">10 unidades disponibles</p>
-                    <button class="btn btn-primary btn-comprar w-100" data-stock="10" data-id="9">Añadir al carrito</button>
-                </div>
-            </div>
-        </div>
-
-    </div>
-</main>
+    </main>
 
 
     <footer class="p-2">
