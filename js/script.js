@@ -43,3 +43,15 @@ document.getElementById('bio').addEventListener('input', function () {
 document.getElementById('satisfaccion').addEventListener('input', function () {
     document.getElementById('satisfaccion-valor').textContent = this.value;
 });
+
+// Tooltips
+document.addEventListener('DOMContentLoaded', function () {
+  const tooltips = document.querySelectorAll('.wiki-tooltip');
+
+  tooltips.forEach(tooltip => {
+    const teamName = tooltip.closest('.accordion-item')?.querySelector('.accordion-button')?.textContent.trim() || "equipo";
+    tooltip.setAttribute('title', `Wiki de ${teamName}`);
+
+    bootstrap.Tooltip.getOrCreateInstance(tooltip);  // mejor práctica
+  });
+});
