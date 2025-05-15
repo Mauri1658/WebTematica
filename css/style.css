@@ -23,11 +23,18 @@
     height: 120px;
 }
 
-/* Para la opción 2 con efecto hover */
-.hover-opacity-100:hover {
-    opacity: 1 !important;
-}
-
-.transition-all {
-    transition: all 0.3s ease;
-}
+  /* Efecto zoom suave - compatible con Bootstrap */
+  .zoom-effect {
+    transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  }
+  .zoom-effect:hover {
+    transform: scale(1.03);
+    z-index: 5;
+  }
+  .zoom-effect-lg {
+    transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  }
+  .zoom-effect-lg:hover {
+    transform: scale(1.05);
+    z-index: 10;
+  }
