@@ -7,11 +7,23 @@
   --defensa: #007606;
   --medio: #3149b6;
   --delantero: #a80a11;
-  --inazuma: linear-gradient(to bottom, #f8e106 60%, #ff990ac8 40%, #ff3617c8 80%);
+  --inazuma: linear-gradient(to bottom, #f8e106 55%, #ff990ac8 65%, #ff3617c8 70%);
   --ventisca: linear-gradient(to right, #ce592f 56.5%, #91ded9 50%);
   --rayo: linear-gradient(to right, #ff0000e2 56.5%, #e5e477 50%);
-
+  --fondo: linear-gradient(to right, #268bba, #91ded9);
 }
+
+body {
+  background-image: url("../img/Fondo.jpg");
+  background-size: cover; /* ajusta la imagen al tamaño de la pantalla */
+  background-position: center;
+  background-repeat: no-repeat;}
+
+
+.container  {
+  background: #e8e8e8;
+  border-radius: 10px;
+  }
 
 .text-montaña { 
   color: var(--tierra);
@@ -71,6 +83,20 @@
   color: transparent;
   /* por compatibilidad con algunos navegadores */
 }
+.text-link {
+color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s;}
+
+.text-link:hover {
+  color: #ff990a;
+}
+  
+
+.bg-fondo {
+  background: var(--fondo);
+}
+
 .personaje {
   img {
     height: 150px;
