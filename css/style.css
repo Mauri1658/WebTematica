@@ -1,48 +1,123 @@
+:root {
+  --fuego: red;
+  --tierra: #ca6610;
+  --aire: #6fdff7;
+  --bosque: #188754;
+  --portero: #a45604;
+  --defensa: #007606;
+  --medio: #3149b6;
+  --delantero: #a80a11;
+  --inazuma: linear-gradient(to bottom, #f8e106 60%, #ff990ac8 40%, #ff3617c8 80%);
+  --ventisca: linear-gradient(to right, #ce592f 56.5%, #91ded9 50%);
+  --rayo: linear-gradient(to right, #ff0000e2 56.5%, #e5e477 50%);
 
-.personaje{
-    img{
-        height: 150px;
-        width: 150px;
-    }
 }
 
-.escudo{
-    width: 10px;
-    height: 120px;
+.text-montaña { 
+  color: var(--tierra);
 }
 
-img.elemento{
-    width: 20px;
-    height: 20px;
+.text-fuego {
+  color: var(--fuego);
 }
 
-img.posicion{
-    width: 25px;
-    height: 20px;
+.text-aire {
+  color: var(--aire);
 }
 
-img.equipo{
-    width: 30px;
-    height: 30px;
+.text-bosque {
+  color: var(--bosque);
 }
 
-img.cap{
-    width: 20px;
-    height: 20px;
+.text-portero {
+  color: var(--portero);
 }
 
-  /* Efecto zoom suave - compatible con Bootstrap */
-  .zoom-effect {
-    transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+.text-defensa {
+  color: var(--defensa);
+}
+
+.text-medio {
+  color: var(--medio);
+}
+
+.text-delantero {
+  color: var(--delantero);
+}
+
+.text-inazuma {
+  background: var(--inazuma);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  /* por compatibilidad con algunos navegadores */
+}
+
+.text-ventisca {
+  background: var(--ventisca);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  /* por compatibilidad con algunos navegadores */
+}
+
+.text-rayo {
+  background: var(--rayo);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  /* por compatibilidad con algunos navegadores */
+}
+.personaje {
+  img {
+    height: 150px;
+    width: 150px;
   }
-  .zoom-effect:hover {
-    transform: scale(1.03);
-    z-index: 5;
-  }
-  .zoom-effect-lg {
-    transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-  }
-  .zoom-effect-lg:hover {
-    transform: scale(1.05);
-    z-index: 10;
-  }
+}
+
+.escudo {
+  width: 10px;
+  height: 120px;
+}
+
+img.elemento {
+  width: 20px;
+  height: 20px;
+}
+
+img.posicion {
+  width: 25px;
+  height: 20px;
+}
+
+img.equipo {
+  width: 30px;
+  height: 30px;
+}
+
+img.cap {
+  width: 20px;
+  height: 20px;
+}
+
+/* Efecto zoom suave - compatible con Bootstrap */
+.zoom-effect {
+  transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.zoom-effect:hover {
+  transform: scale(1.03);
+  z-index: 5;
+}
+
+.zoom-effect-lg {
+  transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.zoom-effect-lg:hover {
+  transform: scale(1.05);
+  z-index: 10;
+}
