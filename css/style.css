@@ -1,16 +1,4 @@
 
-.inazuma1 {
-    height: 299px;
-}
-
-.inazuma2 {
-    height: 413px;
-}
-
-.inazuma3 {
-    height: 413px;
-}
-
 .personaje{
     img{
         height: 150px;
@@ -21,6 +9,26 @@
 .escudo{
     width: 10px;
     height: 120px;
+}
+
+img.elemento{
+    width: 20px;
+    height: 20px;
+}
+
+img.posicion{
+    width: 25px;
+    height: 20px;
+}
+
+img.equipo{
+    width: 30px;
+    height: 30px;
+}
+
+img.cap{
+    width: 20px;
+    height: 20px;
 }
 
   /* Efecto zoom suave - compatible con Bootstrap */
