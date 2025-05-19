@@ -15,17 +15,22 @@
 
 body {
   background-image: url("../img/Fondo.jpg");
-  background-size: cover; /* ajusta la imagen al tamaño de la pantalla */
+  background-size: cover;
+  /* ajusta la imagen al tamaño de la pantalla */
   background-position: center;
-  background-repeat: no-repeat;}
+  background-repeat: no-repeat;
+}
 
+.border-bottom {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3) !important;
+}
 
-.container  {
+.container {
   background: #e8e8e8;
   border-radius: 10px;
-  }
+}
 
-.text-montaña { 
+.text-montaña {
   color: var(--tierra);
 }
 
@@ -83,15 +88,17 @@ body {
   color: transparent;
   /* por compatibilidad con algunos navegadores */
 }
+
 .text-link {
-color: #ffffff;
+  color: #ffffff;
   text-decoration: none;
-  transition: color 0.3s;}
+  transition: color 0.3s;
+}
 
 .text-link:hover {
   color: #ff990a;
 }
-  
+
 
 .bg-fondo {
   background: var(--fondo);
@@ -146,4 +153,36 @@ img.cap {
 .zoom-effect-lg:hover {
   transform: scale(1.05);
   z-index: 10;
+}
+
+/* Contenedor del balón */
+.balon-rebote {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  margin-bottom: 20px;
+}
+
+/* Estilo del balón + animación */
+.balon {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  animation: rebotar-completo 4s ease-in-out infinite;
+  margin-left: 320px;
+
+}
+
+@keyframes rebotar-completo {
+
+  0%,
+  100% {
+    left: 0;
+    transform: rotate(0deg);
+  }
+
+  50% {
+    left: 40%;
+    transform: rotate(360deg);
+  }
 }
