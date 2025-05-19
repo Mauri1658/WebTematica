@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const resultDisplay = document.getElementById('result');
     const goalsDisplay = document.getElementById('goals');
     const savesDisplay = document.getElementById('saves');
+    const playButton = document.getElementById('playButton');
 
     let goals = 0;
     let saves = 0;
@@ -15,7 +16,6 @@ document.addEventListener('DOMContentLoaded', function () {
     function animateBall(direction) {
         ball.classList.remove('d-none');
         
-        // Posición inicial del balón
         ball.style.left = '50%';
         ball.style.transform = 'translateX(-50%)';
         ball.style.bottom = '50px';
@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }, 1000);
     }
 
-    function startGame() {
+    function playGame() {
         const userChoice = prompt(
             "¿Dónde quieres lanzar el balón?\n\n" +
             "Escribe una de estas opciones:\n" +
@@ -49,18 +49,17 @@ document.addEventListener('DOMContentLoaded', function () {
         );
 
         if (userChoice === null) {
-            setTimeout(startGame, 1000);
-            return;
+            return; // Si cancela, no hacer nada
         }
 
         const choice = userChoice.toLowerCase().trim();
 
         if (choice === 'salir') {
-            alert("¡Gracias por jugar! El juego ha terminado.");
+            alert("¡Gracias por jugar!");
             return;
         } else if (choice !== 'izquierda' && choice !== 'centro' && choice !== 'derecha') {
             alert("¡Opción no válida!\n\nDebes escribir exactamente:\n- Izquierda\n- Centro\n- Derecha\n- Salir");
-            startGame();
+            playGame();
             return;
         }
 
@@ -78,14 +77,12 @@ document.addEventListener('DOMContentLoaded', function () {
                           (choice === 'derecha' && randomPosition === 'right');
 
             if (isSave) {
-                // Cambiar a imagen "parado" solo cuando ataja
                 goalkeeper.src = goalkeeperStoppedImg;
                 resultDisplay.textContent = "¡El portero ha atajado el balón!";
                 resultDisplay.className = "fs-4 fw-bold mb-3 text-danger";
                 saves++;
                 savesDisplay.textContent = saves;
                 
-                // Restaurar imagen después de 1 segundo
                 setTimeout(() => {
                     goalkeeper.src = goalkeeperNormalImg;
                 }, 1000);
@@ -96,9 +93,17 @@ document.addEventListener('DOMContentLoaded', function () {
                 goalsDisplay.textContent = goals;
             }
 
-            setTimeout(startGame, 1000);
+            // Habilitar el botón de nuevo después de que termine la jugada
+            setTimeout(() => {
+                playButton.disabled = false;
+                playButton.textContent = "Jugar de nuevo";
+            }, 1000);
         }, 500);
     }
 
-    startGame();
+    playButton.addEventListener('click', function() {
+        this.disabled = true;
+        this.textContent = "Jugando...";
+        playGame();
+    });
 });
