@@ -13,38 +13,30 @@ document.addEventListener('DOMContentLoaded', function () {
     const goalkeeperStoppedImg = 'img/Animaciones/parado.png';
 
     function animateBall(direction) {
-        // Cambiar a la imagen "parado"
-        goalkeeper.src = goalkeeperStoppedImg;
-        
         ball.classList.remove('d-none');
         
-        // Posición inicial del balón (centro abajo)
+        // Posición inicial del balón
         ball.style.left = '50%';
         ball.style.transform = 'translateX(-50%)';
         ball.style.bottom = '50px';
         
-        // Direcciones finales
         const positions = {
             'izquierda': '30%',
             'centro': '50%',
             'derecha': '70%'
         };
         
-        // Animación del balón
         ball.style.transition = 'left 0.5s ease-in-out, bottom 0.5s ease-in-out';
         setTimeout(() => {
             ball.style.left = positions[direction];
             ball.style.bottom = '100px';
         }, 10);
         
-        // Restaurar imagen normal y ocultar balón después de la animación
         setTimeout(() => {
             ball.classList.add('d-none');
-            goalkeeper.src = goalkeeperNormalImg;
         }, 1000);
     }
 
-    // El resto del código permanece igual...
     function startGame() {
         const userChoice = prompt(
             "¿Dónde quieres lanzar el balón?\n\n" +
@@ -72,10 +64,8 @@ document.addEventListener('DOMContentLoaded', function () {
             return;
         }
 
-        // Animar el balón
         animateBall(choice);
 
-        // Mover al portero aleatoriamente
         const positions = ['left', 'center', 'right'];
         const randomPosition = positions[Math.floor(Math.random() * positions.length)];
 
@@ -83,13 +73,22 @@ document.addEventListener('DOMContentLoaded', function () {
         goalkeeper.classList.add(`goalkeeper-${randomPosition}`);
 
         setTimeout(() => {
-            if ((choice === 'izquierda' && randomPosition === 'left') ||
-                (choice === 'centro' && randomPosition === 'center') ||
-                (choice === 'derecha' && randomPosition === 'right')) {
+            const isSave = (choice === 'izquierda' && randomPosition === 'left') ||
+                          (choice === 'centro' && randomPosition === 'center') ||
+                          (choice === 'derecha' && randomPosition === 'right');
+
+            if (isSave) {
+                // Cambiar a imagen "parado" solo cuando ataja
+                goalkeeper.src = goalkeeperStoppedImg;
                 resultDisplay.textContent = "¡El portero ha atajado el balón!";
                 resultDisplay.className = "fs-4 fw-bold mb-3 text-danger";
                 saves++;
                 savesDisplay.textContent = saves;
+                
+                // Restaurar imagen después de 1 segundo
+                setTimeout(() => {
+                    goalkeeper.src = goalkeeperNormalImg;
+                }, 1000);
             } else {
                 resultDisplay.textContent = "¡GOOOOOOL!";
                 resultDisplay.className = "fs-4 fw-bold mb-3 text-success";
