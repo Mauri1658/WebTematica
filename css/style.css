@@ -233,3 +233,19 @@ img.cap {
         height: 100px;
     }
 }
+
+#ball {
+    height: 30px;
+    transition: left 0.5s ease-in-out, bottom 0.5s ease-in-out;
+    z-index: 10;
+}
+
+/* Asegúrate que el balón esté por encima de otros elementos */
+#game-container {
+    position: relative;
+    z-index: 1;
+}
+
+#goalkeeper {
+    z-index: 5;
+}
