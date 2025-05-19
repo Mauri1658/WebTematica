@@ -96,7 +96,7 @@ document.addEventListener('DOMContentLoaded', function () {
             // Habilitar el botón de nuevo después de que termine la jugada
             setTimeout(() => {
                 playButton.disabled = false;
-                playButton.textContent = "Jugar de nuevo";
+                playButton.textContent = "Tirar de nuevo";
             }, 1000);
         }, 500);
     }
