@@ -55,4 +55,3 @@ document.addEventListener('DOMContentLoaded', function () {
     bootstrap.Tooltip.getOrCreateInstance(tooltip);  // mejor práctica
   });
 });
-
