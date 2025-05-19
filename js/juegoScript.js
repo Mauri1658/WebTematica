@@ -78,14 +78,14 @@ document.addEventListener('DOMContentLoaded', function () {
 
             if (isSave) {
                 goalkeeper.src = goalkeeperStoppedImg;
-                resultDisplay.textContent = "¡El portero ha atajado el balón!";
+                resultDisplay.textContent = "¡Mark ha parado el balón!";
                 resultDisplay.className = "fs-4 fw-bold mb-3 text-danger";
                 saves++;
                 savesDisplay.textContent = saves;
                 
                 setTimeout(() => {
                     goalkeeper.src = goalkeeperNormalImg;
-                }, 1000);
+                }, 5000);
             } else {
                 resultDisplay.textContent = "¡GOOOOOOL!";
                 resultDisplay.className = "fs-4 fw-bold mb-3 text-success";
