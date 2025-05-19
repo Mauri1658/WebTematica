@@ -168,21 +168,16 @@ img.cap {
   position: absolute;
   width: 30px;
   height: 30px;
-  animation: rebotar-completo 4s ease-in-out infinite;
-  margin-left: 320px;
+  animation: rebotar-completo 7s ease-in-out infinite;
+  margin-top: 5px;
 
 }
 
 @keyframes rebotar-completo {
-
-  0%,
-  100% {
-    left: 0;
-    transform: rotate(0deg);
-  }
-
   50% {
-    left: 40%;
     transform: rotate(360deg);
   }
 }
+
+
+
