@@ -11,21 +11,43 @@
   --ventisca: linear-gradient(to right, #ce592f 56.5%, #91ded9 50%);
   --rayo: linear-gradient(to right, #ff0000e2 56.5%, #e5e477 50%);
   --fondo: linear-gradient(to right, #268bba, #91ded9);
+  --tarjetaMontaña: linear-gradient(200deg, #ec3919, #f9d969);
+  --tarjetaFuego: linear-gradient(200deg, #c32626, #ba5959);
+  --tarjetaAire: linear-gradient(200deg, #1537b1, #69cbf2);
+  --tarjetaBosque: linear-gradient(200deg, #1b8a2e, #77c54b);
 }
 
 body {
   background-image: url("../img/Fondo.jpg");
-  background-size: cover; /* ajusta la imagen al tamaño de la pantalla */
+  background-size: cover;
+  /* ajusta la imagen al tamaño de la pantalla */
   background-position: center;
-  background-repeat: no-repeat;}
+  background-repeat: no-repeat;
+}
 
 
-.container  {
-  background: #e8e8e8;
+.bg-cartaMontaña{
+  background: var(--tarjetaMontaña)
+}
+.bg-cartaFuego{
+  background: var(--tarjetaFuego)
+}
+.bg-cartaAire{
+  background: var(--tarjetaAire)
+}
+.bg-cartaBosque{
+  background: var(--tarjetaBosque)
+}
+.border-bottom {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3) !important;
+}
+
+.container {
+  background: #e9ecef;
   border-radius: 10px;
-  }
+}
 
-.text-montaña { 
+.text-montaña {
   color: var(--tierra);
 }
 
@@ -83,15 +105,17 @@ body {
   color: transparent;
   /* por compatibilidad con algunos navegadores */
 }
+
 .text-link {
-color: #ffffff;
+  color: #ffffff;
   text-decoration: none;
-  transition: color 0.3s;}
+  transition: color 0.3s;
+}
 
 .text-link:hover {
   color: #ff990a;
 }
-  
+
 
 .bg-fondo {
   background: var(--fondo);
@@ -147,3 +171,30 @@ img.cap {
   transform: scale(1.05);
   z-index: 10;
 }
+
+/* Contenedor del balón */
+.balon-rebote {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  margin-bottom: 20px;
+}
+
+/* Estilo del balón + animación */
+.balon {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  animation: rebotar-completo 7s ease-in-out infinite;
+  margin-top: 5px;
+
+}
+
+@keyframes rebotar-completo {
+  50% {
+    transform: rotate(360deg);
+  }
+}
+
+
+
