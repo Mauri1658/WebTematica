@@ -42,10 +42,24 @@
         </ul>
     </header>
 
-    <main class="container">
-
+    <main class="container my-5">
+        <div class="row justify-content-center">
+            <div class="col-12 text-center mb-4">
+                <h1 class="text-light">¡Dispara a la portería!</h1>
+            </div>
+            
+            <div id="game-container" class="col-lg-8 col-md-10 position-relative">
+                <div id="goal" class="position-absolute"></div>
+                <div id="mark" class="position-absolute"></div>
+                <div id="ball" class="position-absolute d-none"></div>
+            </div>
+            
+            <div class="col-12 text-center mt-4">
+                <button id="shoot-btn" class="btn btn-warning btn-lg px-4 py-2 fw-bold">¡Disparar!</button>
+                <div id="score-display" class="text-light fs-3 mt-3">Goles: 0</div>
+            </div>
+        </div>
     </main>
-
     <footer class="p-2 bg-fondo">
         <ul class="nav justify-content-center border-bottom p-2 mb-3">
             <li class="nav-item"><a href="index.html" class="nav-link px-2 text-link">Home</a></li>
