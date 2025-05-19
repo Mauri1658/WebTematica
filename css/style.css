@@ -196,3 +196,40 @@ img.cap {
     transform: rotate(360deg);
   }
 }
+
+
+#game-container {
+    height: 300px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+#goalkeeper {
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 120px;
+    transition: left 0.5s ease-in-out;
+}
+
+.goalkeeper-left {
+    left: 30% !important;
+}
+
+.goalkeeper-center {
+    left: 50% !important;
+}
+
+.goalkeeper-right {
+    left: 70% !important;
+}
+
+@media (max-width: 576px) {
+    #game-container {
+        height: 250px;
+    }
+    
+    #goalkeeper {
+        height: 100px;
+    }
+}

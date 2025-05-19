@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
     <script defer src="js/bootstrap.bundle.js"></script>
-    <script defer src="js/script.js"></script>
+    <script defer src="js/juegoScript.js"></script>
 </head>
 
 <body>
@@ -43,20 +43,26 @@
     </header>
 
     <main class="container my-5">
-        <div class="row justify-content-center">
+          <div class="row">
             <div class="col-12 text-center mb-4">
-                <h1 class="text-light">¡Dispara a la portería!</h1>
+                <h1>Juego de Penaltis</h1>
+                <p class="lead">Elige dónde lanzar el balón</p>
             </div>
-            
-            <div id="game-container" class="col-lg-8 col-md-10 position-relative">
-                <div id="goal" class="position-absolute"></div>
-                <div id="mark" class="position-absolute"></div>
-                <div id="ball" class="position-absolute d-none"></div>
+        </div>
+        
+        <div class="row justify-content-center">
+            <div class="col-md-8 col-lg-6 position-relative" id="game-container">
+                <img src="img/Animaciones/porteria.jpg" alt="Portería" class="img-fluid rounded">
+                <img id="goalkeeper" src="img/Animaciones/mark_evans.webp" alt="Portero" class="position-absolute">
             </div>
-            
-            <div class="col-12 text-center mt-4">
-                <button id="shoot-btn" class="btn btn-warning btn-lg px-4 py-2 fw-bold">¡Disparar!</button>
-                <div id="score-display" class="text-light fs-3 mt-3">Goles: 0</div>
+        </div>
+        
+        <div class="row mt-4">
+            <div class="col-12 text-center">
+                <div id="result" class="fs-4 fw-bold mb-3"></div>
+                <div class="mt-3">
+                    <p>Goles: <span id="goals">0</span> | Paradas: <span id="saves">0</span></p>
+                </div>
             </div>
         </div>
     </main>
