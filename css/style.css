@@ -11,6 +11,10 @@
   --ventisca: linear-gradient(to right, #ce592f 56.5%, #91ded9 50%);
   --rayo: linear-gradient(to right, #ff0000e2 56.5%, #e5e477 50%);
   --fondo: linear-gradient(to right, #268bba, #91ded9);
+  --tarjetaMontaña: linear-gradient(200deg, #ec3919, #f9d969);
+  --tarjetaFuego: linear-gradient(200deg, #c32626, #ba5959);
+  --tarjetaAire: linear-gradient(200deg, #1537b1, #69cbf2);
+  --tarjetaBosque: linear-gradient(200deg, #1b8a2e, #77c54b);
 }
 
 body {
@@ -21,12 +25,25 @@ body {
   background-repeat: no-repeat;
 }
 
+
+.bg-cartaMontaña{
+  background: var(--tarjetaMontaña)
+}
+.bg-cartaFuego{
+  background: var(--tarjetaFuego)
+}
+.bg-cartaAire{
+  background: var(--tarjetaAire)
+}
+.bg-cartaBosque{
+  background: var(--tarjetaBosque)
+}
 .border-bottom {
   border-bottom: 1px solid rgba(0, 0, 0, 0.3) !important;
 }
 
 .container {
-  background: #e8e8e8;
+  background: #e9ecef;
   border-radius: 10px;
 }
 
