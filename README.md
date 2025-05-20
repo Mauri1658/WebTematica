@@ -121,7 +121,7 @@ WEBTEMATICA/
 
 ## 🚀 Instalación y uso
 
-**1.** 📥 Clona el repositorio:
+**1. 📥 Clona el repositorio:**
    ```bash
    git clone https://github.com/Mauri1658/WebTematica.git
    ```
