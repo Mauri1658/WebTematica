@@ -50,7 +50,7 @@
 
 ### 🛒 Tienda
 
-- 🧢 **Catálogo visual**: camisetas, balones, accesorios  .
+- 🧢 **Catálogo visual**: camisetas, balones, etc...
 - 🛍️ Carrito de compras. 
 
 ![Tienda](img/capturasReadme/tienda.png)
@@ -59,7 +59,7 @@
 
 ### 🥅 Juego Interactivo
 
-- 🧤 Minijuego de penales en JavaScript.
+- 🧤 Minijuego de penaltis en JavaScript.
 - 🎯 Puntajes por goles/paradas.
 - ⚙️ Dinámica fácil y entretenida.
 
@@ -102,19 +102,13 @@ WEBTEMATICA/
 │   ├── Posiciones/
 │   ├── Tienda/
 │   ├── capturasReadme/
-│   │   ├── home.png
-│   │   ├── personajes.png
-│   │   ├── equipos.png
-│   │   ├── tienda.png
-│   │   ├── juego.png
-│   │   └── contacto.png
-│   └── FAVICON.png
-│   └── capi.png
+│   ├── FAVICON.png
+│   ├── capi.png
 │   └── Fondo.png
 ├── js/
 │   ├── bootstrap.bundle.js
 │   ├── juegoScript.js
-│   ├── script.js
+│   └── script.js
 ├── index.html
 ├── personajes.html
 ├── equipos.html
