@@ -89,6 +89,7 @@
 
 ## 🗂️ Estructura del proyecto
 
+```plaintext
 WEBTEMATICA/
 ├── css/
 │   ├── bootstrap.css
@@ -116,6 +117,7 @@ WEBTEMATICA/
 ├── tienda.html
 ├── contacto.html
 └── README.md
+```
 
 ---
 
