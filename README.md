@@ -127,14 +127,14 @@ WEBTEMATICA/
    ```bash
    git clone https://github.com/Mauri1658/WebTematica.git
    ```
-**2.** 📂 Abre el archivo index.html en tu navegador web
+**2.** 📂 Abre el archivo index.html en tu navegador web.
 
-**3.** 🔍 Explora y disfruta de cada sección
+**3.** 🔍 Explora y disfruta de cada sección.
 
 ---
 
 ## 👨‍💻 Créditos
 
-- 🧑‍🎨 **Diseño y desarrollo**: Mauri Pacheco & Álvaro Escudero
+- 🧑‍🎨 **Diseño y desarrollo**: Mauri Pacheco & Álvaro Escudero.
 
-- 🖼️ **Contenido e imágenes**: Basado en la saga Inazuma Eleven de Level-5
+- 🖼️ **Contenido e imágenes**: Basado en la saga Inazuma Eleven de Level-5.
