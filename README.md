@@ -8,12 +8,12 @@
 
 ## 🌐 ¿Qué encontrarás en el sitio?
 
-- 🏠 **Inicio** – Introducción al universo de Inazuma Eleven  
-- 👥 **Personajes** – Fichas detalladas de los jugadores más icónicos  
-- 🏆 **Equipos** – Historia y datos de cada escuadra  
-- 🛒 **Tienda Virtual** – Productos exclusivos de la saga  
-- 🥅 **Minijuego** – ¡Ataja o anota penaltis al estilo Inazuma!  
-- 📬 **Contacto** – Formulario interactivo para sugerencias y mensajes  
+- 🏠 **Home** – Introducción al universo de Inazuma Eleven. 
+- 👥 **Personajes** – Fichas detalladas de los jugadores más icónicos.
+- 🏆 **Equipos** – Historia y datos de cada equipo.
+- 🥅 **Juego** – ¡Ataja o anota penaltis al estilo Inazuma!
+- 🛒 **Tienda** – Productos exclusivos de la saga.
+- 📬 **Contacto** – Formulario interactivo para sugerencias y mensajes.
 
 ---
 
@@ -21,9 +21,9 @@
 
 ### 🏠 Home
 
-- ✨ Presentación general de la saga  
-- 🕹️ Sección de juegos para Nintendo  
-- 🎞️ Galería animada con los mejores momentos
+- ✨ Presentación general de la saga.
+- 🕹️ Sección de juegos para Nintendo.
+- 🎞️ Galería de gifs animada.
 
 ![Home](img/capturasReadme/home.png)
 
@@ -31,9 +31,9 @@
 
 ### 👥 Personajes
 
-- 📸 Imagen de cada jugador  
-- 🎯 Posición en el campo  
-- 💫 Técnicas especiales únicas  
+- 📸 Imagen de cada jugador.
+- 🎯 Posición en el campo.
+- 💫 Técnicas especiales únicas.
 
 ![Personajes](img/capturasReadme/personajes.png)
 
@@ -41,8 +41,8 @@
 
 ### 🏆 Equipos
 
-- 📚 Información organizada por escuadras  
-- 🎛️ Acordeones interactivos para descubrir detalles  
+- 📚 Información organizada por equipos.
+- 🎛️ Acordeones interactivos para descubrir detalles.  
 
 ![Equipos](img/capturasReadme/equipos.png)
 
@@ -50,8 +50,8 @@
 
 ### 🛒 Tienda
 
-- 🧢 Catálogo visual: camisetas, balones, accesorios  
-- 🛍️ Carrito de compras funcional  
+- 🧢 **Catálogo visual**: camisetas, balones, accesorios  .
+- 🛍️ Carrito de compras. 
 
 ![Tienda](img/capturasReadme/tienda.png)
 
@@ -59,9 +59,9 @@
 
 ### 🥅 Juego Interactivo
 
-- 🧤 Minijuego de penales en JavaScript  
-- 🎯 Puntajes por goles/paradas  
-- ⚙️ Dinámica fácil y entretenida  
+- 🧤 Minijuego de penales en JavaScript.
+- 🎯 Puntajes por goles/paradas.
+- ⚙️ Dinámica fácil y entretenida.
 
 ![Juego](img/capturasReadme/juego.png)
 
@@ -69,8 +69,8 @@
 
 ### 📬 Contacto
 
-- 📝 Formulario con validación avanzada  
-- ✅ Mensajes dinámicos de éxito y error  
+- 📝 Formulario con validación avanzada.
+- ✅ Mensajes dinámicos de éxito y error.
 
 ![Contacto](img/capturasReadme/contacto.png)
 
@@ -79,18 +79,49 @@
 ## 🛠️ Tecnologías utilizadas
 
 ### 🔧 Frontend
-- 🌐 **HTML5**
-- 🎨 **CSS3** (con animaciones propias)
-- 🧠 **JavaScript** (para interacciones y lógica del juego)
-- 📱 **Bootstrap 5** (diseño responsive)
-- 🖼️ **Bootstrap Icons**
+- 🌐 **HTML5**.
+- 🎨 **CSS3** (con animaciones propias).
+- 🧠 **JavaScript** (para interacciones y lógica del juego).
+- 📱 **Bootstrap 5** (diseño responsive).
+- 🖼️ **Bootstrap Icons**.
 
 ---
 
 ## 🗂️ Estructura del proyecto
 
-
-
+WEBTEMATICA/
+├── css/
+│   ├── bootstrap.css
+│   └── style.css
+├── img/
+│   ├── Animaciones/
+│   ├── Carátulas/
+│   ├── Elementos/
+│   ├── Equipos/
+│   ├── Personajes/
+│   ├── Posiciones/
+│   ├── Tienda/
+│   ├── capturasReadme/
+│   │   ├── home.png
+│   │   ├── personajes.png
+│   │   ├── equipos.png
+│   │   ├── tienda.png
+│   │   ├── juego.png
+│   │   └── contacto.png
+│   └── FAVICON.png
+│   └── capi.png
+│   └── Fondo.png
+├── js/
+│   ├── bootstrap.bundle.js
+│   ├── juegoScript.js
+│   ├── script.js
+├── index.html
+├── personajes.html
+├── equipos.html
+├── juego.html
+├── tienda.html
+├── contacto.html
+└── README.md
 
 ---
 
@@ -103,7 +134,7 @@
 
 3. 🔍 Explora y disfruta de cada sección
 
---
+---
 
 ## 👨‍💻 Créditos
 
