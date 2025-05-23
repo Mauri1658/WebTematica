@@ -138,3 +138,8 @@ WEBTEMATICA/
 - 🧑‍🎨 **Diseño y desarrollo**: Mauri Pacheco & Álvaro Escudero.
 
 - 🖼️ **Contenido e imágenes**: Basado en la saga Inazuma Eleven de Level-5.
+
+
+## 📺 Video Explicativo
+
+- https://youtu.be/7kbrW6yeB_Q
