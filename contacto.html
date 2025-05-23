@@ -50,7 +50,7 @@
                 <form class="row g-3 needs-validation" novalidate>
                     <!-- Nombre completo -->
                     <div class="col-12 col-sm-12 col-md-6 col-lg-4">
-                        <label for="nombre" class="form-label">Nombre completo</label>
+                        <label for="nombre" class="form-label">Nombre completo *</label>
                         <input type="text" class="form-control" id="nombre" required minlength="3">
                         <div class="invalid-feedback">
                             Por favor ingrese su nombre completo (mínimo 3 caracteres).
@@ -59,7 +59,7 @@
 
                     <!-- Email -->
                     <div class="col-12 col-sm-12 col-md-6 col-lg-4">
-                        <label for="email" class="form-label">Email</label>
+                        <label for="email" class="form-label">Email *</label>
                         <input type="email" class="form-control" id="email" required>
                         <div class="invalid-feedback">
                             Por favor ingrese un email válido.
@@ -68,7 +68,7 @@
 
                     <!-- Contraseña -->
                     <div class="col-12 col-sm-12 col-md-6 col-lg-4">
-                        <label for="pass" class="form-label">Contraseña</label>
+                        <label for="pass" class="form-label">Contraseña *</label>
                         <input type="password" class="form-control" id="pass" required minlength="8">
                         <div class="invalid-feedback">
                             La contraseña debe tener al menos 8 caracteres.
@@ -77,7 +77,7 @@
 
                     <!-- Confirmar contraseña -->
                     <div class="col-12 col-sm-12 col-md-6 col-lg-4">
-                        <label for="pass2" class="form-label">Confirmar contraseña</label>
+                        <label for="pass2" class="form-label">Confirmar contraseña *</label>
                         <input type="password" class="form-control" id="pass2" required>
                         <div class="invalid-feedback">
                             Las contraseñas no coinciden.
@@ -86,7 +86,7 @@
 
                     <!-- Edad -->
                     <div class="col-12 col-sm-12 col-md-6 col-lg-4">
-                        <label for="edad" class="form-label">Edad</label>
+                        <label for="edad" class="form-label">Edad *</label>
                         <input type="number" class="form-control" id="edad" required min="18" max="120">
                         <div class="invalid-feedback">
                             Debe tener entre 18 y 120 años.
@@ -95,7 +95,7 @@
 
                     <!-- Fecha de nacimiento -->
                     <div class="col-12 col-sm-12 col-md-6 col-lg-4">
-                        <label for="fecha_nac" class="form-label">Fecha de nacimiento</label>
+                        <label for="fecha_nac" class="form-label">Fecha de nacimiento *</label>
                         <input type="date" class="form-control" id="fecha_nac" required>
                         <div class="invalid-feedback">
                             Por favor ingrese su fecha de nacimiento.
@@ -129,7 +129,7 @@
                     <!-- Género -->
                     <div class="col-12 col-sm-12 col-md-6 col-lg-4">
                         <fieldset class="border p-2 rounded">
-                            <legend class="float-none w-auto px-2">Género</legend>
+                            <legend class="float-none w-auto px-2">Género *</legend>
                             <div class="form-check">
                                 <input class="form-check-input" type="radio" name="genero" id="hombre" value="hombre"
                                     required>
@@ -153,7 +153,7 @@
                     <!-- Sagas Favoritas -->
                     <div class="col-12 col-sm-12 col-md-6 col-lg-4">
                         <fieldset class="border p-2 rounded saga-fieldset">
-                            <legend class="float-none w-auto px-2">Sagas Favoritas (al menos una)</legend>
+                            <legend class="float-none w-auto px-2">Sagas Favoritas</legend>
                             <div class="form-check">
                                 <input class="form-check-input saga" type="checkbox" id="original" value="original">
                                 <label class="form-check-label" for="original">
@@ -187,7 +187,7 @@
 
                     <!-- País -->
                     <div class="col-12 col-sm-12 col-md-6 col-lg-4">
-                        <label for="pais" class="form-label">País</label>
+                        <label for="pais" class="form-label">País *</label>
                         <select class="form-select" id="pais" required>
                             <option value="" selected disabled>Selecciona...</option>
                             <option value="es">España</option>
@@ -225,7 +225,7 @@
 
                     <!-- CV (PDF) -->
                     <div class="col-12 col-sm-12 col-md-6 col-lg-4">
-                        <label for="cv" class="form-label">CV (PDF)</label>
+                        <label for="cv" class="form-label">CV (PDF) *</label>
                         <input type="file" class="form-control" id="cv" accept=".pdf" required>
                         <div class="invalid-feedback">
                             Por favor suba su CV en formato PDF.
